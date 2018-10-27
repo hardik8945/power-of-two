@@ -30,10 +30,10 @@ The second number is not a power of 2 hence the answer is NO.
 def power_of_two():   
     n=int(input())
     if n>0:
-      while n%2==1:
+      while n%2==0:
         n=n/2
-      if n==0:
+      if n==1:
         print("YES",end="")
-    if n==1 or n!=0:
+    if n==0 or n!=1:
       print("NO",end="")
   
